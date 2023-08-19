@@ -1,0 +1,146 @@
+body {
+    background: url(https://p.w3layouts.com/demos_new/template_demo/23-03-2018/movie_seat_selection-demo_Free/759053290/web/images/banner.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.title {
+        font-size: 2.9em;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.22);
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0.8em 1vw 0.9em;
+        font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper {
+    /* width: 700px; */
+    margin: 0 5vw;
+    background: rgba(128, 128, 128, 0.34);
+    padding: 3.5vw;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+.input-title {
+    color: #ff9800;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+}
+label {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+}
+label span {
+    color: #f00;
+}
+.input-form {
+    padding: 1em;
+    width: 80% !important;
+    background: transparent !important;
+    border: 1px solid #888686 !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: #fff !important;
+}
+li.smallBox {
+    text-align: left;
+    display: inline-block;
+    margin-right: 1em;
+    color: #fff;
+}
+.smallBox::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.greenBox::before {
+    content: "";
+    background: Green;
+}
+.redBox::before {
+    content: "";
+    background: Red;
+}
+.emptyBox::before {
+    content: "";
+    box-shadow: inset 0px 2px 3px 0px rgb(255, 152, 0), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    -moz-box-shadow: inset 0px 2px 3px 0px rgb(255, 152, 0), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: inset 0px 2px 3px 0px rgb(255, 152, 0), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color: #fff;
+}
+
+/* Chỗ ngồi */
+td {
+    width: 40px;
+    font-weight: 600;
+    font-size: 1em;
+    padding-top: 7px;
+    height: 24px;
+    color: #fff;
+}
+input[type=checkbox] {
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: relative;
+}
+.seats {
+    border: 1px solid red;
+    background: yellow;
+}
+input[type=checkbox]:before {
+    content: "";
+    width: 24px;
+    height: 21px;
+    position: absolute;
+    top: 0%;
+    left: -15%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid #ff9800;
+    /* box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    -moz-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); */
+    background-color: transparent;
+}
+.screen {
+    width: 100%;
+    background: #ff9800;
+    margin: 2em 0;
+}
+.wthree {
+    padding: 0.8em;
+    font-size: 1.2em;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+}
+/* .Displaytable td, .Displaytable th {
+    width: 100%;
+    padding: 7px 10px;
+    color: #000;
+    font-weight: 600;
+}
+table.Displaytable tr {
+    background: #fff;
+    color: #fff;
+} */
