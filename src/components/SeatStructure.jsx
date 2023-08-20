@@ -5,7 +5,7 @@ import {connect} from "react-redux"
 class SeatStructure extends Component {
   renderContent = () => {
     return this.props.listChair.map((element, index) => {
-      return  <ListChair element={element} index={index} key={index}/>
+      return  <ListChair element={element} key={index}/>
     })
   }
   render() {

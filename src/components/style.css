@@ -134,13 +134,16 @@ input[type=checkbox]:before {
     letter-spacing: 7px;
     word-spacing: 10px;
 }
-/* .Displaytable td, .Displaytable th {
-    width: 100%;
-    padding: 7px 10px;
-    color: #000;
-    font-weight: 600;
+.chair {
+    width: 36px;
+    height: 36px;
+    padding: 0 !important;
+    background-color: #cecece !important;
 }
-table.Displaytable tr {
-    background: #fff;
-    color: #fff;
-} */
+.button-success {
+    width: 36px;
+    height: 36px;
+    padding: 0 !important;
+    background-color: green !important;
+    color: #fff !important;
+}

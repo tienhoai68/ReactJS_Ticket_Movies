@@ -7,7 +7,7 @@ export default class InformationSeat extends Component {
       <div className="screen">
       <h2 className="wthree">Screen this way</h2>
     </div>
-      <div classname="mt-5">
+      <div className="mt-5">
         <ul className="seat_w3ls">
           <li className="smallBox greenBox">Selected Seat</li>
           <li className="smallBox redBox">Reserved Seat</li>

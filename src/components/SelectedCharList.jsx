@@ -20,9 +20,19 @@ export default class SelectedCharList extends Component {
                                 150.000
                             </td>
                             <td>
-                                <button className='btn btn-danger'>Delete</button>
+                                <button className='btn btn-danger'>Cancel</button>
                             </td>
+                            
                         </tr>
+                        <tr>
+                            <td>
+                                Total
+                            </td>
+                            <td>
+                                150.000
+                            </td>  
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
