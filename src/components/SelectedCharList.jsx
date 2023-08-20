@@ -8,22 +8,23 @@ export default class SelectedCharList extends Component {
                 <table className="table table-bordered w-100">
                     <tbody style={{color: "#fff"}}>
                         <tr>
-                            <th>Name</th>
                             <th>Number of Seats</th>
                             <th>Sprice</th>
+                            <th>Action</th>
                         </tr>
                         <tr>
-                            <td>
-                                Nguyễn Văn A
-                            </td>
                             <td>
                                 A1
                             </td>
                             <td>
                                 150.000
                             </td>
+                            <td>
+                                <button className='btn btn-danger'>Delete</button>
+                            </td>
                         </tr>
-                    </tbody></table>
+                    </tbody>
+                </table>
             </div>
 
         )
