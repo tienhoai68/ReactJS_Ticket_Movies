@@ -1,25 +1,29 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { datGheAction } from "../store/actions/datGheAction";
 
- class ListChair extends Component {
+class ListChair extends Component {
   render() {
     return (
-        <tr>
-          <td>{this.props.element.hang}</td>
-          {
-            this.props.element.danhSachGhe.map((item, index)=>{
-              // console.log(item.dangChon);
-              const {soGhe, daDat, dangChon} = item;
-              // return <td key={index}><button>{item.soGhe}</button></td>
-              return <td key={index}><button onClick={() => this.props.dispatch(
-                {
-                  type: "DAT_GHE",
-                  payload: item,
-                }
+      <tr>
+        <td>{this.props.element.hang}</td>
+        {
+          this.props.element.danhSachGhe.map((item) => {
+            // console.log(this.props.element.hang);
+
+            // console.log(item.dangChon);
+            const { soGhe, daDat, dangChon } = item;
+            // return <td key={index}><button>{item.soGhe}</button></td>
+            if (this.props.element.hang !== "") {
+              return <td key={item.soGhe}><button onClick={() => this.props.dispatch(
+                datGheAction(item)
               )} disabled={daDat} className={`btn chair ${dangChon && 'button-success'}`} >{soGhe}</button></td>
-            })
-          }
-        </tr>
+            } else {
+              return <td key={item.soGhe}>{soGhe}</td>
+            }
+          })
+        }
+      </tr>
     );
   }
 }

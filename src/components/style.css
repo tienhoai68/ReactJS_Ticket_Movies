@@ -72,14 +72,15 @@ li.smallBox {
 }
 .redBox::before {
     content: "";
-    background: Red;
+    background: #cecece;
+    opacity: 0.65;
 }
 .emptyBox::before {
     content: "";
     box-shadow: inset 0px 2px 3px 0px rgb(255, 152, 0), 0px 1px 0px 0px rgba(255, 255, 255, .8);
     -moz-box-shadow: inset 0px 2px 3px 0px rgb(255, 152, 0), 0px 1px 0px 0px rgba(255, 255, 255, .8);
     -webkit-box-shadow: inset 0px 2px 3px 0px rgb(255, 152, 0), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-    background-color: #fff;
+    background-color: #cecece;
 }
 
 /* Chỗ ngồi */
@@ -126,7 +127,7 @@ input[type=checkbox]:before {
     margin: 2em 0;
 }
 .wthree {
-    padding: 0.8em;
+    padding: 1.8em;
     font-size: 1.2em;
     color: #000;
     text-transform: uppercase;
