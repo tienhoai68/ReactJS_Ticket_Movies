@@ -12,7 +12,7 @@ class TotalPrice extends Component {
     }
     render() {
         return (
-            <td>
+            <td style={{color : 'orange', fontWeight: 800}}>
                 {this.renderContent()} VNĐ
             </td> 
         )

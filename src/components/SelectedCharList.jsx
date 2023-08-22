@@ -5,23 +5,14 @@ import { datGheAction } from '../store/actions/datGheAction';
 
 class SelectedCharList extends Component {
     renderContent = () => {
-        // const chair = this.props.listChair.map((element) => {
-        //     return element.danhSachGhe.map((item) => {
-        //         return item;
-        //     })
-        // });
         const filteredItems = this.props.listChair.flatMap(item => item.danhSachGhe.filter(ghe => ghe.dangChon === true));
-        // console.log(filteredItems);
         return filteredItems.map((item) => {
-            // console.log(item.gia);
-            // console.log(item.soGhe);
-
             return (
                 <tr key={item.soGhe}>
-                    <td>
+                    <td style={{color : 'orange', fontWeight: 800}}>
                         {item.soGhe}
                     </td>
-                    <td>
+                    <td style={{color : 'orange', fontWeight: 800}}>
                         {item.gia.toLocaleString()} VNĐ
                     </td>
                     <td>
@@ -32,20 +23,20 @@ class SelectedCharList extends Component {
         })
     }
     render() {
-
+        
         return (
             <div className="displayerBoxes text-center mt-5 mx-auto container" style={{ overflowX: 'auto' }}>
-                <h2 className='mb-5' style={{ color: "#fff" }}>Selected CharList</h2>
+                <h2 className='mb-5 title_td'>Selected CharList</h2>
                 <table className="table table-bordered w-100">
-                    <tbody style={{ color: "#fff" }}>
+                    <tbody>
                         <tr>
-                            <th>Selected chair</th>
-                            <th>Price</th>
-                            <th>Action</th>
+                            <th className='title_td'>Selected chair</th>
+                            <th className='title_td'>Price</th>
+                            <th className='title_td'>Action</th>
                         </tr>
                         {this.renderContent()}
                         <tr>
-                            <td>
+                            <td className='title_td'>
                                 Total
                             </td>
                             <TotalPrice />

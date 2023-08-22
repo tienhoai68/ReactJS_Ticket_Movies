@@ -6,11 +6,10 @@ class ListChair extends Component {
   render() {
     return (
       <tr>
-        <td>{this.props.element.hang}</td>
+        <td style={{color : 'orange', fontWeight: 800}}>{this.props.element.hang}</td>
         {
           this.props.element.danhSachGhe.map((item) => {
             // console.log(this.props.element.hang);
-
             // console.log(item.dangChon);
             const { soGhe, daDat, dangChon } = item;
             // return <td key={index}><button>{item.soGhe}</button></td>
@@ -19,7 +18,7 @@ class ListChair extends Component {
                 datGheAction(item)
               )} disabled={daDat} className={`btn chair ${dangChon && 'button-success'}`} >{soGhe}</button></td>
             } else {
-              return <td key={item.soGhe}>{soGhe}</td>
+              return <td style={{color : 'orange', fontWeight: 800}} key={item.soGhe}>{soGhe}</td>
             }
           })
         }

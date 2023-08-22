@@ -11,8 +11,8 @@ body {
 .title {
         font-size: 2.9em;
         text-transform: uppercase;
-        color: #fff;
-        font-weight: 600;
+        color: orange;
+        font-weight: 800;
         text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.22);
         letter-spacing: 2px;
         text-align: center;
@@ -29,14 +29,6 @@ body {
     display: -webkit-flex;
     flex-wrap: wrap;
 }
-.input-title {
-    color: #ff9800;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    font-size: 1em;
-    letter-spacing: 0.5px;
-    line-height: 1.7;
-}
 label {
     font-size: 1em;
     color: #fff;
@@ -44,14 +36,6 @@ label {
 }
 label span {
     color: #f00;
-}
-.input-form {
-    padding: 1em;
-    width: 80% !important;
-    background: transparent !important;
-    border: 1px solid #888686 !important;
-    font-family: 'Source Sans Pro', sans-serif !important;
-    color: #fff !important;
 }
 li.smallBox {
     text-align: left;
@@ -72,7 +56,7 @@ li.smallBox {
 }
 .redBox::before {
     content: "";
-    background: #cecece;
+    background: red;
     opacity: 0.65;
 }
 .emptyBox::before {
@@ -116,9 +100,6 @@ input[type=checkbox]:before {
     vertical-align: middle;
     text-align: center;
     border: 3px solid #ff9800;
-    /* box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-    -moz-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); */
     background-color: transparent;
 }
 .screen {
@@ -131,7 +112,7 @@ input[type=checkbox]:before {
     font-size: 1.2em;
     color: #000;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 7px;
     word-spacing: 10px;
 }
@@ -147,4 +128,16 @@ input[type=checkbox]:before {
     padding: 0 !important;
     background-color: green !important;
     color: #fff !important;
+}
+.title_td {
+    color : #fff ;
+    font-weight: 800;
+}
+.btn.disabled, .btn:disabled {
+    opacity: .65;
+    background-color: red!important;
+    color: #fff;
+}
+.btn.disabled, .btn:disabled:hover {
+    color: #fff;
 }
