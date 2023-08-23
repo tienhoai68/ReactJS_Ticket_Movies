@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ListChair from "./ListChair";
-import {connect} from "react-redux"
+import { connect } from "react-redux"
 
 class SeatStructure extends Component {
   renderContent = () => {
     return this.props.listChair.map((element, index) => {
-      return  <ListChair element={element} key={index}/>
+      return <ListChair element={element} key={index} />
     })
   }
   render() {
@@ -14,8 +14,7 @@ class SeatStructure extends Component {
         className="seatStructure text-center mx-auto"
         style={{ overflowX: "auto" }}
       >
-        <p id="notification" />
-        <table id="seatsBlock">
+        <table>
           <tbody>
             {this.renderContent()}
           </tbody>
