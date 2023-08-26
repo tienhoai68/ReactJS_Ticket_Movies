@@ -5,7 +5,7 @@ import { datGheAction } from '../store/actions/datGheAction';
 
 class SelectedCharList extends Component {
     renderContent = () => {
-        const filteredItems = this.props.listChair.flatMap(item => item.danhSachGhe.filter(ghe => ghe.dangChon === true));
+        const filteredItems = this.props.listChair.flatMap(item => item.danhSachGhe.filter(chair => chair.dangChon === true));
         return filteredItems.map((item) => {
             return (
                 <tr key={item.soGhe}>

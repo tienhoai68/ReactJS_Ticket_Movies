@@ -103,14 +103,16 @@ input[type=checkbox]:before {
     background-color: transparent;
 }
 .screen {
-    width: 100%;
-    background: #ff9800;
-    margin: 2em 0;
+    border-bottom: 50px solid rgb(255, 159, 95);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+    font-size: 25px;
+    color: #fff;
 }
 .wthree {
-    padding: 1.8em;
     font-size: 1.2em;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 7px;
